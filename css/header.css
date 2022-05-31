@@ -253,7 +253,7 @@ a.navbar-brand {
 }
 .header-head {
   font-size: 20px;
-  color: #000000;
+  color: var(--main-color);
 }
 button.navbar-toggler.collapsed {
   border: 2px solid #000000;
@@ -264,7 +264,7 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
 /* NEW NAVBAR */
 @media  (min-width:992px){
   .header-head {
-    color: #000000;
+    color: var(--main-color);
     font-size: 20px;
     border: 2px solid #333;
     border-radius: 10px;
@@ -274,7 +274,7 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
   }
   .header-head:hover {
     color: #fff;
-    background-color: #000000;
+    background-color: var(--main-color);
     transform: scale(1.2);
   }
   nav.navbar.navbar-expand-lg.navbar-light.bg-light {

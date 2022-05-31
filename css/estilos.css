@@ -1,5 +1,5 @@
 :root{
-  --main-color:#000000;
+  --main-color:#E74C3C;
 }
 .switch-color{
   min-height: 100vh;
@@ -28,7 +28,8 @@
   z-index: 1000;
 }
 body{
-    font-family: "Gilroy ExtraBold";
+    /* font-family: "Gilroy ExtraBold"; */
+    font-family: 'Kanit', "Gilroy ExtraBold";
 }
 .hero-overlay-title{
   animation:backInUp; 
@@ -51,6 +52,12 @@ body{
 .card:hover{
     transform: scale(1.2);
 
+}
+.card-title, .card-text{
+  color: #fff;
+}
+.card-body{
+  background-color: var(--main-color);
 }
 .btn-cards{
     background-color: #fff;
