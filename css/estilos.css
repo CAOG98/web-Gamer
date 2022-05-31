@@ -1,0 +1,425 @@
+:root{
+  --main-color:#000000;
+}
+.switch-color{
+  min-height: 100vh;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.switch-color h1{
+  color: var(--main-color);
+  background-color: #fff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 3);
+  border-radius: 10px;
+  font-size: 6em;
+  padding: .5em .8;
+
+}
+.color-switcher{
+  position: fixed;
+  top: 25px; 
+  right: 0;
+  width: 200px;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 1000;
+}
+body{
+    font-family: "Gilroy ExtraBold";
+}
+.hero-overlay-title{
+  animation:backInUp; 
+  animation-duration: 4s;
+}
+.hero-overlay-pararaph{
+  animation:backInDown; 
+  animation-duration: 4s;
+}
+.container2{
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 4rem;
+}
+.card{
+    border: 3px solid var(--main-color) !important;
+    width: 20rem;
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.2);
+
+}
+.btn-cards{
+    background-color: #fff;
+    border: 2px solid #333;
+    transition: 0.4s;
+    color: var(--main-color);
+}
+.btn-cards:hover{
+    background-color: var(--main-color);
+    border-color: #333;
+}
+
+@media (max-width: 1200px) {
+    .card{
+        margin-right: 20px;
+    }
+  }
+@media (max-width: 768px) {
+    .container2{
+        display: block;
+    }
+    .card{
+        margin:auto;
+        margin-bottom: 2rem;
+    }
+    .about-me{
+      background-color: #fff;
+    }
+  }
+/* ABOUT ME */
+.about-me{
+    margin: auto;
+    margin-bottom: 4rem;
+    max-width: 90%;
+    background: linear-gradient(to right,
+    #fff  20%, #B9B9B9 40%, #929292 60%, #606060  80%, #424242  100%);
+    box-shadow: 15px 15px 15px 14px rgba(0, 0, 0, 0.3);
+    border:2px solid #333;
+    border-radius: 10px;
+}
+.title-about{
+  margin-left: 100px;
+}
+.h1-aboutme{
+  color: var(--main-color);
+}
+
+/* ScrollBar */
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #cfcfcf;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #cfcfcf;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+  }
+
+  /* Background Home page */
+  .hero {
+    background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_18.jpg);
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 99vw;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+    margin-bottom: 4rem;
+  }
+  .hero-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0,0,0,.3);
+  }
+  .hero-overlay-title{
+    color: var(--main-color);
+  }
+  
+  .hero h1 {
+    font-weight: 100;
+    z-index: 1;
+    margin-top: 200px;
+  }
+  .hero p {
+    z-index: 1;
+    letter-spacing: 1px;
+  }
+  /* END Background Home page */
+
+  /* background page*/
+  .page {
+    height: 100vh;
+  }
+  .page::after {
+    content: "";
+    position: fixed;
+    width: 300%;
+    height: 100%;
+    background-color: var(--main-color);
+    left: 40%;
+    top: 40%;
+    transform: translateX(-50%) skew(0, -10deg);
+    border-radius: 50%;
+    z-index: -2;
+    animation: waving 5s ease-in-out infinite alternate;
+  }
+  @keyframes waving {
+    from {
+      transform: translateX(-50%) skew(0, -10deg);
+    }
+    to {
+      transform: translateX(-30%) skew(10deg, 0);
+    }
+  }
+.page {
+  height: 100vh;
+}
+.page::before {
+  content: "";
+  position: fixed;
+  width: 300%;
+  height: 100%;
+  background-color: #333;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) skew(0, -10deg);
+  border-radius: 50%;
+  z-index: -1;
+  animation: waving 5s ease-in-out infinite alternate;
+}
+@keyframes waving {
+  from {
+    transform: translateX(-50%) skew(0, -10deg);
+  }
+  to {
+    transform: translateX(-30%) skew(10deg, 0);
+  }
+}
+/* END background page*/
+
+/* SLIDER background */
+/* .section-background {    
+  height: 100vh;
+  filter: brightness(60%);
+  background-attachment: fixed;
+}
+.section-background:nth-child(1) {
+  background-image: url('https://s1.1zoom.me/b5050/812/Cats_Glance_Kittens_558640_1920x1080.jpg');
+}
+
+.section-background:nth-child(2) {
+  background-image: url(https://i.pinimg.com/originals/03/f4/81/03f48174ad6079d2753a9df245d75578.jpg);
+}
+
+.section-background:nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1547841243-eacb14453cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+} */
+#content-block {
+	position: relative;
+	overflow: hidden;
+}
+
+.parallax-slide {
+	position: relative;
+	height: 100vh;
+}
+
+.parallax-clip {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	/*clip: rect(auto, auto, auto, auto);*/
+}
+
+.fixed-parallax {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	background-position: center top;
+	background-attachment: fixed;
+	/* -webkit-transform: translateZ(0); /* necessary for iOS! */
+}
+
+
+/* used only as overlay for the images,
+   darkens it a little in this case */
+.fixed-parallax:before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.2);
+	content: "";
+}
+
+
+/* CSS specific to iOS devices */ 
+@supports (-webkit-overflow-scrolling: touch) {
+	.parallax-clip {
+		clip: rect(auto, auto, auto, auto);
+	}
+	.fixed-parallax {
+		position: fixed;
+		background-attachment: unset;
+		/* -webkit-transform: translateZ(0); necessary for iOS! */
+	}
+}
+
+/* END SLIDER background */
+
+@media  (max-width:768px){
+  .h1-aboutme{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .p-aboutme{
+    margin: 22px 40px 0px 40px;
+  }
+  .multimedia{
+    width: 75%; 
+  height:60%; 
+  }
+}
+.multimedia{
+  width: 75%; 
+  height:60%; 
+}
+
+
+/* SWITCH CAMBIO DE COLOR */
+.switch-color h1{
+  color: var(--main-color);
+  background-color: #fff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 3);
+  border-radius: 10px;
+  font-size: 6em;
+  padding: .5em .8;
+
+}
+.color-switcher{
+  position: fixed;
+  top: 24px; 
+  right: -200px;
+  width: 200px;
+  padding: 10px;
+  background-color: #aaa;
+  z-index: 1000;
+  border-radius: 10px;
+  transition-duration: .7s;
+}
+.color-switcher.active{
+    top:120px;
+    right: 0px;
+}
+.color-switcher h3{
+    color: var(--main-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding: 5px 0;
+    text-align: center;
+}
+.color-switcher .switcher-btn{
+    position: absolute;
+    top: 0; left: -70px;
+    color: #333;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 35px;
+}
+.color-switcher .switcher-btn i{
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+  100%{
+      transform: rotate(360deg);
+  }
+}
+.color-switcher .theme-buttons-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.color-switcher .theme-buttons-container .theme-buttons{
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+#particles-js{
+  max-width: 100%;
+  background: linear-gradient(to left,
+    #fff  20%, #B9B9B9 40%, #929292 60%, #606060  80%, #424242  100%);
+  margin-bottom: 50px;
+  z-index: -1;
+  height: 100%;
+}
+
+
+/* COLORES DE LA PAGINA */
+.title-page,a.nav-link.nav-link2,.subMenu ul li a, .title-about,.h1-about,.p-footer-letter,.h5-footer,.btn-footer, .link-footer{
+  color: var(--main-color);
+}
+.title-typewriter{
+  font-size: 5rem;
+  color: #333;
+}
+
+.input{
+  color: yellow;
+  font-size: 5rem;
+}
+
+.typewriter {
+  font-family: sans-serif;
+  color: var(--main-color);
+  padding-left: 30px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  font-weight: 900;
+}
+.typewriter-text {
+  padding-right: 10px;
+  color: #ffe509;
+  border-right: solid #ffe509 7px;
+  text-transform: uppercase;
+  animation: cursor 1s ease-in-out infinite;
+  font-weight: bold;
+}
+@keyframes cursor {
+  from { border-color: #ffe509; }
+  to { border-color: transparent; }
+}
+
+@media (max-width: 767.98px) {
+  .typewriter { font-size: 35px; }
+}
+@media (min-width: 768px) {
+  .typewriter { font-size: 60px; }
+}
+.col-md-7.order-md-2 {
+  margin: auto;
+}

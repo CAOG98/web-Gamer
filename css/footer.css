@@ -1,0 +1,118 @@
+.foot{
+    background: linear-gradient(to right,
+    #fff  20%, #B9B9B9 40%, #929292 60%, #606060  80%, #424242  100%);
+    max-width: 100%;
+    border-top: 4px solid #333;
+}
+.btn-footer{
+    background-color: #fff;
+    border:2px solid #333;
+    transition: 0.4s;
+}
+.btn-footer:hover{
+    background-color: #FF3D3D;
+    border-color: #333;
+}
+
+.icon{
+    transition: 0.3s;
+}
+.icon:hover{
+    transform: scale(1.5);
+}
+.nav-link3{
+    transition: 0.2s;
+  }
+  .nav-link3:hover{
+      color: var(--main-color);
+    text-decoration:line-through;
+  }
+
+  .back-to-top{
+      text-decoration: none;
+      color: #fff;
+  }
+  .back-to-top:hover{
+      color: #fff;
+      text-decoration:line-through #333 4px;
+  }
+  .hr-footer{
+      height: 3px;
+      background-color: #000000;
+  }
+
+@media (min-width: 768px) {
+    .offset-md-1 {
+        margin-left: 25%;
+    }
+  }
+
+  .form-control:focus {
+    border-color: var(--main-color) !important;
+    box-shadow: 0 0 0 .25rem var(--main-color);
+}
+ 
+::placeholder {
+    color: var(--main-color) !important;
+  }
+
+  .btn-container {
+    display: inline-block!important;
+    white-space: nowrap;
+    min-width: 160px;
+}
+a.kofi-button:visited {
+    color: #fff !important;
+    text-decoration: none !important;
+    background-color: var(--main-color);
+}
+a.kofi-button {
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+    line-height: 36px!important;
+    min-width: 150px;
+    display: inline-block!important;
+    background-color: #29abe0;
+    padding: 2px 12px !important;
+    text-align: center !important;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+    border: 0 none #fff !important;
+    font-family: 'Quicksand',Helvetica,Century Gothic,sans-serif !important;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: 700!important;
+    font-size: 14px !important;
+}
+span.kofitext {
+    color: #fff !important;
+    letter-spacing: -0.15px!important;
+    vertical-align: middle;
+    line-height: 33px !important;
+    padding: 0;
+    text-align: center;
+    text-decoration: none!important;
+    text-shadow: 0 1px 1px rgba(34, 34, 34, 0.05);
+}
+.kofitext img.kofiimg {
+    height: 15px!important;
+    width: 22px!important;
+    display: initial;
+    animation: kofi-wiggle 3s infinite;
+}
+img.kofiimg {
+    display: initial!important;
+    vertical-align: middle;
+    height: 13px!important;
+    width: 20px!important;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    border: none;
+    margin-top: 0;
+    margin-right: 5px!important;
+    margin-left: 0!important;
+    margin-bottom: 3px!important;
+    content: url('https://storage.ko-fi.com/cdn/cup-border.png');
+}
